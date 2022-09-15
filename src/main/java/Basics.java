@@ -44,6 +44,7 @@ public class Basics {
          *                Hello World!
          */
 
+        System.out.println("Hello World!");
 
 
         /* 4. In Python, we could declare variables using a simple assignment
@@ -62,7 +63,7 @@ public class Basics {
          * TODO (Task 2): Create a variable named my_variable and assign it the
          *                value 100.
          */
-
+        int my_variable = 100;
 
 
         /* Do not remove the line below: if you did task 2 correctly, then
@@ -99,6 +100,9 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
+        for (int i = 10; i = 0; i--){
+            System.out.println(i)
+        }
 
 
     }
@@ -169,14 +173,25 @@ public class Basics {
          *                .length attribute (e.g. arr.length)
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
+         *
+         if length of array is 1 or 0 --> return 0
+         * for loop: start at 1 (not 0).
+         * if i cant be divided by 2: then add the int in that spot to  current_sum
+         * ends automatially at end of array because its a for loop
          */
+        if (oddSum.length = 0 OR oddSum.length = 1){
+            return 0;
+        }
+        for (i = 1; i = < oddSum.length; i+++){
+        current_sum = current_sum + oddSum[i]
+        }
 
         return current_sum;
     }
 
 
     /*
-     * TODO (Task 6): Submit the changes you made on GitHub!
+     * TODO (Task 6): Submit the changes you made on GitHub! push? add?
      *                When you submit it, go to the 'Actions' tab. You should
      *                be able to see this exercise being autograded!
      *
