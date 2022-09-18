@@ -2,19 +2,14 @@
  * This file contains a few exercises to familiarize you with Java.
  * You should read this file from top-to-bottom. Any tasks you are to complete
  * are labelled with TODO
- *
  * For your convenience, we have also included references to the
  * relevant readings for each task.
- */
-
-/**
  *  1. In Java, no code can exist outside of a class. Unlike Python which uses
- *    functions, all code in Java uses methods.
- *
- *    For this exercise, all of our code is within the Basics class.
- *
+ *    functions, all code in Java uses methods.*
+ *    For this exercise, all of our code is within the Basics class.*
  *    (Relevant reading: 1.1.1. Defining classes)
  */
+
 public class Basics {
 
     /**
@@ -24,11 +19,9 @@ public class Basics {
      *    However in Java, the equivalent is the main method:
      *        public static void main(final String[] args){
      *            // Code goes in here
-     *        }
-     *
+     *        }*
      *    When you run this file (Basics.java), the code within the main
      *    method is run.
-     *
      *    (Relevant reading: 1.1.2. Defining methods)
      */
     public static void main(final String[] args) {
@@ -100,8 +93,8 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-        for (int i = 10; i = 0; i--){
-            System.out.println(i)
+        for (int i = 10; i >= 0; i--) {
+            System.out.println("Current count: " + i);
         }
 
 
@@ -147,8 +140,13 @@ public class Basics {
         StringBuilder ret = new StringBuilder();
 
         // Fill in the rest of the body here
+        String[] splitArray = to_split.split(" ", 7);
+        for (String s : splitArray) {
+            ret.append(s.charAt(0));
+        }
 
         return ret.toString();
+
     }
 
     /**
@@ -174,16 +172,12 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          *
-         if length of array is 1 or 0 --> return 0
-         * for loop: start at 1 (not 0).
-         * if i cant be divided by 2: then add the int in that spot to  current_sum
-         * ends automatially at end of array because its a for loop
          */
-        if (oddSum.length = 0 OR oddSum.length = 1){
+        if (arr.length == 0 || arr.length == 1){
             return 0;
         }
-        for (i = 1; i = < oddSum.length; i+++){
-        current_sum = current_sum + oddSum[i]
+        for (int i = 1; i < arr.length; i += 2) {
+        current_sum = current_sum + arr[i];
         }
 
         return current_sum;
